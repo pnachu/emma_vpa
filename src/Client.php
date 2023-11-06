@@ -857,7 +857,7 @@ class Client
             $send_data['signup_form_id'] = $signup_form_id;
         }
 
-        $data = $this->make_request('members/add', 'POST', $send_data);
+        $data = $this->make_request('members/signup', 'POST', $send_data);
 
         return $data;
     }
